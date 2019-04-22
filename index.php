@@ -21,17 +21,12 @@
         <tr>
           <td>Harga</td>
           <td> : </td>
-          <td> <input type="number" name="harga" value=""> </td>
+          <td> <input type="text" name="harga" value=""> </td>
         </tr>
         <tr>
           <td>Jumlah</td>
           <td> : </td>
-          <td> <input type="number" name="jumlah" value=""> </td>
-        </tr>
-        <tr>
-          <td>Tanggal Masuk</td>
-          <td> : </td>
-          <td> <input type="date" name="tgl_masuk" value=""> </td>
+          <td> <input type="text" name="jumlah" value=""> </td>
         </tr>
         <tr>
           <td> <input type="submit" name="submit" value="submit"> </td>
@@ -57,7 +52,7 @@
             $nm_barang = $_POST['nm_barang'];
             $harga = $_POST['harga'];
             $jumlah = $_POST['jumlah'];
-            $tgl_masuk = $_POST['tgl_masuk'];
+            $tgl_masuk = date("Y-m-d");
 
             $sql_insert = "INSERT INTO barang (id, nm_barang, harga, jumlah, tgl_masuk) VALUES (?,?,?,?,?)";
 
@@ -76,7 +71,7 @@
           echo "<h3>Data telah dimasukan</h3>";
         }
 
-s
+
       ?>
 
   </body>
