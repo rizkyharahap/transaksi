@@ -87,7 +87,7 @@
                 <th>Tanggal Masuk</th>
               </tr>
 
-              <?php foreach ($data as $data ): ?>
+              <?php foreach ($data as $data ) { ?>
                 <tr>
                   <td><?php echo $data['id'] ?></td>
                   <td><?php echo $data['nm_barang'] ?></td>
@@ -95,14 +95,15 @@
                   <td><?php echo $data['jumlah'] ?></td>
                   <td><?php echo $data['tgl_masuk'] ?></td>
                 </tr>
-              <?php endforeach; ?>
+              <?php } ?>
             </table>
 
           <?php
          }
-          catch(Exception $e) {
-            echo "Failed: " . $e;
-          } ?>
+       }
+        catch(Exception $e) {
+          echo "Failed: " . $e;
+        } ?>
 
   </body>
 </html>
