@@ -72,7 +72,7 @@
         }
 
         try {
-          $sql_select = "SELECT * FROM transaksi";
+          $sql_select = "SELECT * FROM barang";
           $query = $conn->query($sql_select);
           $data = $query->fetchAll();
           if(count($data) > 0) { ?>
@@ -96,7 +96,7 @@
             <?php } ?>
             </table>
 
-      <?php 
+      <?php
           } else {
               echo "<h3>No one is currently registered.</h3>";
           }
