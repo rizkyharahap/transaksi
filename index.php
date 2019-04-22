@@ -3,36 +3,68 @@
   <head>
     <meta charset="utf-8">
     <title>Stok Barang</title>
+
+    <style media="screen">
+      body {
+        margin: 50px;
+        background-color: rgb(97, 152, 144);
+      }
+      input {
+        width: 300px;
+        padding: 10px 20px;
+        border: solid grey 2px;
+        border-radius: 2px;
+      }
+      .form-input {
+        margin: 50px;
+        box-shadow: 1px 1px 2px 1px;
+      }
+      table {
+        border: solid grey 1px;
+      }
+      table tr {
+        margin: 0;
+      }
+      table tr td {
+        padding: 10px;
+        margin: 0;
+      }
+    </style>
   </head>
   <body>
-    <h1>Input Stok Barang</h1>
-    <form class="" action="index.php" method="post">
-      <table>
-        <tr>
-          <td>ID</td>
-          <td> : </td>
-          <td> <input type="number" name="id" value=""> </td>
-        </tr>
-        <tr>
-          <td>Nama Barang</td>
-          <td> : </td>
-          <td> <input type="text" name="nm_barang" value=""> </td>
-        </tr>
-        <tr>
-          <td>Harga</td>
-          <td> : </td>
-          <td> <input type="text" name="harga" value=""> </td>
-        </tr>
-        <tr>
-          <td>Jumlah</td>
-          <td> : </td>
-          <td> <input type="text" name="jumlah" value=""> </td>
-        </tr>
-        <tr>
-          <td> <input type="submit" name="submit" value="submit"> </td>
-        </tr>
-      </table>
-      </form>
+    <div class="form-input">
+      <h1>Input Stok Barang</h1>
+      <form class="" action="index.php" method="post">
+        <table>
+          <tr>
+            <td>ID</td>
+            <td> : </td>
+            <td> <input type="number" name="id" value=""> </td>
+          </tr>
+          <tr>
+            <td>Nama Barang</td>
+            <td> : </td>
+            <td> <input type="text" name="nm_barang" value=""> </td>
+          </tr>
+          <tr>
+            <td>Harga</td>
+            <td> : </td>
+            <td> <input type="text" name="harga" value=""> </td>
+          </tr>
+          <tr>
+            <td>Jumlah</td>
+            <td> : </td>
+            <td> <input type="text" name="jumlah" value=""> </td>
+          </tr>
+          <tr>
+            <td> <input type="submit" name="submit" value="submit"> </td>
+          </tr>
+        </table>
+        </form>
+    </div>
+
+
+
       <?php
         $host = "transaksi.database.windows.net";
         $user = "rizkyhaphap";
