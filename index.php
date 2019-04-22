@@ -75,7 +75,7 @@
           $sql_select = "SELECT * FROM barang";
           $query = $conn->query($sql_select);
           $data = $query->fetchAll();
-          if (count($data)) > 0  {
+          if (count($data) > 0)  {
             ?>
             <h2>Data Stok Barang</h2>
             <table>
