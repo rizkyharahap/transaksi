@@ -87,7 +87,7 @@
                 <th>Tanggal Masuk</th>
               </tr>
 
-              <?php foreach ($variable as $key => $value): ?>
+              <?php foreach ($data as $data ): ?>
                 <tr>
                   <td><?php echo $data['id'] ?></td>
                   <td><?php echo $data['nm_barang'] ?></td>
