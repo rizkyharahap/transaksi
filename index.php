@@ -8,6 +8,7 @@
       body {
         margin: 50px;
         background-color: rgb(97, 152, 144);
+        color: white;
       }
       input {
         width: 300px;
@@ -20,7 +21,6 @@
         box-shadow: 1px 1px 2px 1px;
       }
       table {
-        border: solid grey 1px;
       }
       table tr {
         margin: 0;
@@ -28,6 +28,7 @@
       table tr td {
         padding: 10px;
         margin: 0;
+        border: solid grey 1px;
       }
     </style>
   </head>
@@ -57,6 +58,8 @@
             <td> <input type="text" name="jumlah" value=""> </td>
           </tr>
           <tr>
+            <td></td>
+            <td></td>
             <td> <input type="submit" name="submit" value="submit"> </td>
           </tr>
         </table>
