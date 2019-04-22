@@ -72,7 +72,7 @@
         }
 
         try {
-          $sql_select = "SELECT * FROM transaksi";
+          $sql_select = "SELECT * FROM barang";
           $query = $conn->query($sql_select);
           $data = $query->fetchAll();
           if (count($data)) > 0  {
