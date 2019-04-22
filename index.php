@@ -59,7 +59,7 @@
             $jumlah = $_POST['jumlah'];
             $tgl_masuk = $_POST['tgl_masuk'];
 
-            $sql_insert = "INSERT INTO barang (id, nm_barang, harga, jumlah, date) VALUES (?,?,?,?,?)";
+            $sql_insert = "INSERT INTO barang (id, nm_barang, harga, jumlah, tgl_masuk) VALUES (?,?,?,?,?)";
 
             $query = $conn->prepare($sql_insert);
             $query->bindValue(1,$id);
