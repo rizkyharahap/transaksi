@@ -71,6 +71,39 @@
           echo "<h3>Data telah dimasukan</h3>";
         }
 
+        try {
+          $sql_select = "SELECT * FROM transaksi";
+          $query = $conn->query($sql_select);
+          $data = $query->fetchAll();
+          if(count($data) > 0) { ?>
+            <h2>Data Barang</h2>
+            <table>
+              <tr>
+                <th>ID</th>
+                <th>Nama Barang</th>
+                <th>Harga</th>
+                <th>Jumlah</th>
+                <th>Tanggal Masuk</th>
+              </tr>
+            <?php foreach($data as $data) { ?>
+              <tr>
+                <td><?php echo $data['id'] ?></td>
+                <td><?php echo $data['nm_barang'] ?></td>
+                <td>Rp.<?php echo $data['harga'] ?></td>
+                <td><?php echo $data['jumlah'] ?></td>
+                <td><?php echo $data['tgl_masuk'] ?></td>
+              </tr>
+            <?php } ?>
+            </table>
+
+      <?php 
+          } else {
+              echo "<h3>No one is currently registered.</h3>";
+          }
+      } catch(Exception $e) {
+          echo "Failed: " . $e;
+      }
+
 
       ?>
 
